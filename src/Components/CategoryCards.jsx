@@ -1,40 +1,45 @@
-import Card from 'react-bootstrap/Card';
-import { Col, Container, Row } from "react-bootstrap"
-import './CategoryCards.css'
+import Card from "react-bootstrap/Card";
+import { Col, Container, Row } from "react-bootstrap";
+import "./CategoryCards.css";
+import CardImage1 from "../Image/banner-01.jpg.webp";
+import CardImage2 from "../Image/banner-02.jpg.webp";
+import CardImage3 from "../Image/banner-03.jpg.webp";
 
-
-
-
-function Cards(props){
-    return(
-        <>
-        <Card className='mt-4 card-radius '>
+function Cards(props) {
+  return (
+    <Card className="card-radius">
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
-        <Card.Text>
-          Image will be pasted here later!
+        {/* <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
         </Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
+      <Card.Img variant="top" src={props.img} />
     </Card>
-        </>
-    )
+  );
 }
 
 const CategoryCards = () => {
-    return(
-        <>
-        <Container>
-        <Row className='d-flex justify-content-evenly'>
-            <Col md={6} lg={4}><Cards title='Men' subtitle='New Arrivals'/></Col>
-            <Col md={6} lg={4}><Cards title='Women' subtitle='New Arrivals'/></Col>
-            <Col md={6} lg={4}><Cards title='Accessories' subtitle='New Trend'/></Col>
+  return (
+    <>
+      <Container>
+        <Row className="d-flex justify-content-evenly">
+          <Col md={6} lg={4} className='mt-3'>
+            <Cards title="Men" subtitle="New Arrivals" img={CardImage1} />
+          </Col>
+          <Col md={6} lg={4} className='mt-3'>
+            <Cards title="Women" subtitle="New Arrivals" img={CardImage2}/>
+          </Col>
+          <Col md={6} lg={4} className='mt-3'>
+            <Cards title="Accessories" subtitle="New Trend" img={CardImage3}/>
+          </Col>
         </Row>
-        </Container>
-        </>
-    );
-}
+      </Container>
+    </>
+  );
+};
 
 export default CategoryCards;
