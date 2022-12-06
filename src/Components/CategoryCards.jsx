@@ -1,8 +1,8 @@
 import Card from "react-bootstrap/Card";
 import { Col, Container, Row } from "react-bootstrap";
 import "./CategoryCards.css";
-import CardImage1 from "../Image/banner-01.jpg.webp";
-import CardImage2 from "../Image/banner-02.jpg.webp";
+import CardImage1 from "../Image/banner-02.jpg.webp";
+import CardImage2 from "../Image/banner-01.jpg.webp";
 import CardImage3 from "../Image/banner-03.jpg.webp";
 
 function Cards(props) {
@@ -11,11 +11,6 @@ function Cards(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
-        {/* <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
       <Card.Img variant="top" src={props.img} />
     </Card>
