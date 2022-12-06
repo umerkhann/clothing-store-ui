@@ -8,11 +8,10 @@ import CardImage3 from "../Image/banner-03.jpg.webp";
 function Cards(props) {
   return (
     <Card className="card-radius">
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
-      </Card.Body>
       <Card.Img variant="top" src={props.img} />
+      <Container style={{background: "#212529"}}>
+      <Card.Title className="card-title">{props.title}</Card.Title>
+        </Container>
     </Card>
   );
 }
