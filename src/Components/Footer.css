@@ -68,3 +68,13 @@ ul {
     padding-top: 72px;
     padding-bottom: 32px;
   }
+
+
+  .icon-padding{
+    padding: 8px;
+}
+
+.text-style{
+   font-family: "Poppins",Helvetica,Arial,sans-serif;
+   color: #b3aaa2 !important;
+}
