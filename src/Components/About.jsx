@@ -52,13 +52,13 @@ const About = () => {
           </Col>
         </Row>
         <Row className="p-t-40 justify-content-evenly">
-        <Col md={{span: 5, order:1}} lg={{span: 4, order:1}} sm={{span: 12, order:2}}>
+        <Col md={{span: 5, order:1}} lg={{span: 4, order:1}} sm={{span: 12, order:2}} xs={{span: 12, order:2}}>
             <Container className="image-overflow">
               
               <img className="img-size" src={AboutImage2} alt="IMG" />
             </Container>
           </Col>
-          <Col md={{span: 7, order:2}} lg={{span: 8, order:2}} sm={{span: 12, order:1}}>
+          <Col md={{span: 7, order:2}} lg={{span: 8, order:2}} sm={{span: 12, order:1}} xs={{span: 12, order:1}}>
             <Container>
               <h3>Our Story</h3>
               <p style={{ paddingTop: "20px" }}>
