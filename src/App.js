@@ -7,8 +7,8 @@ function App() {
   return (
     <>
     {/* <CategoryCards /> */}
-    {/* <About /> */}
-    <Contact />
+    <About />
+    {/* <Contact /> */}
     <Footer />
     </>
   );

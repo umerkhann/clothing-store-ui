@@ -37,3 +37,9 @@
 .p-t-40{
     padding-top: 40px;
 }
+
+
+.image-overflow{
+    display: block;
+    overflow: hidden
+}
